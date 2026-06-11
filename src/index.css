@@ -1,5 +1,6 @@
+@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-sans: 'Inter', sans-serif;
@@ -7,8 +8,8 @@
 
 /* FIXED: Replaced legacy @layer base with standard CSS selectors for Tailwind v4 */
 body {
-  background-color: #F3F3F3;
-  color: #1E1E1E;
+  background-color: #f3f3f3;
+  color: #1e1e1e;
   font-family: var(--font-sans);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -33,8 +34,9 @@ body {
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01), 
-              transform 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01);
+  transition:
+    opacity 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01),
+    transform 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01);
 }
 
 /* Active state: fully visible and snapped into position */
