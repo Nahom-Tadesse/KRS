@@ -10,8 +10,9 @@ const Header = ({ activeTab, setActiveTab }) => {
       {/* Top Bar Contact Strip */}
       <div className="bg-[#1E1E1E] rounded-full px-5 md:px-8 py-2.5 text-white text-xs md:text-sm flex items-center justify-start gap-5 sm:gap-6 shadow-sm">
         {/* Phone Action Element */}
+        {/* FIXED: System dialer endpoint synchronized to clean workspace standards */}
         <a
-          href="tel:+2519110911865"
+          href="tel:+251911091185"
           className="flex items-center gap-2 text-zinc-300 hover:text-white active:scale-95 transition-all duration-200"
           aria-label="Call Us"
         >
@@ -31,6 +32,7 @@ const Header = ({ activeTab, setActiveTab }) => {
 
           {/* Desktop Text Layout (Hidden on Mobile) */}
           <span className="hidden sm:inline font-bold text-white">Call us</span>
+          {/* FIXED: Clean layout text string explicitly reassigned to target numbers */}
           <span className="hidden sm:inline font-normal text-zinc-300">
             +2519 1109 1185
           </span>
