@@ -29,3 +29,16 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+/* Base state: hidden and shifted down slightly */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01), 
+              transform 1.2s cubic-bezier(0.21, 1.02, 0.43, 1.01);
+}
+
+/* Active state: fully visible and snapped into position */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
