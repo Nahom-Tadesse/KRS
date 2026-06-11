@@ -1,0 +1,8 @@
+/* Custom Interaction & Layer Overrides */
+.interactive-card-shadow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.interactive-card-shadow:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
