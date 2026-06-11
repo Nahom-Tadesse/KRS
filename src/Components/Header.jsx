@@ -32,7 +32,7 @@ const Header = ({ activeTab, setActiveTab }) => {
           {/* Desktop Text Layout (Hidden on Mobile) */}
           <span className="hidden sm:inline font-bold text-white">Call us</span>
           <span className="hidden sm:inline font-normal text-zinc-300">
-            +2519 1109 11865
+            +2519 1109 1185
           </span>
         </a>
 
@@ -104,7 +104,7 @@ const Header = ({ activeTab, setActiveTab }) => {
 
         <div className="flex items-center gap-2 md:gap-3">
           <a
-            href="https://wa.me/2519110911899"
+            href="https://wa.me/251911091185"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black text-white px-4 md:px-6 py-2 md:py-2.5 rounded-full font-bold text-xs md:text-sm hover:bg-zinc-800 active:scale-95 transition-all duration-200 text-center shadow-sm"
