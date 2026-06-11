@@ -1,12 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/react-refresh'; // or '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-  // CRITICAL FOR GITHUB PAGES: Add your repo name back here
-  base: '/KRS/', 
-})
+  plugins: [react()],
+  base: './', // <--- Change this to './' to force relative paths for assets
+});
