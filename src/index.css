@@ -5,14 +5,13 @@
   --font-sans: 'Inter', sans-serif;
 }
 
-@layer base {
-  body {
-    background-color: #F3F3F3;
-    color: #1E1E1E;
-    font-family: var(--font-sans);
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-  }
+/* FIXED: Replaced legacy @layer base with standard CSS selectors for Tailwind v4 */
+body {
+  background-color: #F3F3F3;
+  color: #1E1E1E;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Staggered Scroll/Mount Animations */
